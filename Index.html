@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dottoressa Medico di Base e Chirurga Estetica - Filler, Rinofiller, Botox, Bio-Rivitalizzazione, Microneedling">
+    <meta name="keywords" content="medicina estetica, chirurga plastica, filler, botox, rinofiller, microneedling">
+    <meta name="author" content="Dr.ssa Medica">
+    <meta property="og:title" content="Dr.ssa Medica - Medicina Estetica">
+    <meta property="og:description" content="Specialista in medicina estetica e chirurgia plastica">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630">
+    <title>Dr.ssa Medica - Medicina Estetica & Chirurgia Plastica</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-animations.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💊</text></svg>">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-icon">✨</span>
+                <span class="logo-text">Dr.ssa Medica</span>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#servizi" class="nav-link">Servizi</a></li>
+                <li><a href="#chi-sono" class="nav-link">Chi Sono</a></li>
+                <li><a href="#contatti" class="nav-link">Contatti</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <h1 class="hero-title fade-in-up">Bellezza Consapevole</h1>
+            <p class="hero-subtitle fade-in-up delay-1">Medicina Estetica e Chirurgia Plastica di Qualità</p>
+            <button class="cta-button fade-in-up delay-2" onclick="document.getElementById('contatti').scrollIntoView({behavior: 'smooth'})">
+                Richiedi Consulenza
+            </button>
+        </div>
+        <div class="glow-element"></div>
+    </section>
+
+    <!-- Servizi Section -->
+    <section id="servizi" class="servizi">
+        <div class="container">
+            <h2 class="section-title">I Nostri Servizi</h2>
+            <p class="section-subtitle">Trattamenti innovativi per la tua bellezza naturale</p>
+            
+            <div class="servizi-grid">
+                <!-- Filler Dermici -->
+                <div class="servizio-card fade-in" data-animation="fadeInUp">
+                    <div class="card-icon">💉</div>
+                    <h3>Filler Dermici</h3>
+                    <p class="card-description">Riempimento naturale delle rughe e dei solchi per un aspetto più giovane e riposato.</p>
+                    <ul class="card-features">
+                        <li>✓ Acido Ialuronico premium</li>
+                        <li>✓ Risultati immediati</li>
+                        <li>✓ Durata 6-12 mesi</li>
+                        <li>✓ Completamente sicuro</li>
+                    </ul>
+                </div>
+
+                <!-- Rinofiller -->
+                <div class="servizio-card fade-in" data-animation="fadeInUp">
+                    <div class="card-icon">👃</div>
+                    <h3>Rinofiller</h3>
+                    <p class="card-description">Modellazione armoniosa del naso senza intervento chirurgico, risultati naturali in pochi minuti.</p>
+                    <ul class="card-features">
+                        <li>✓ Non invasivo</li>
+                        <li>✓ Risultati reversibili</li>
+                        <li>✓ Nessun tempo di recupero</li>
+                        <li>✓ Perfezionamento contorni</li>
+                    </ul>
+                </div>
+
+                <!-- Botox -->
+                <div class="servizio-card fade-in" data-animation="fadeInUp">
+                    <div class="card-icon">💫</div>
+                    <h3>Botox - Rilassamento Muscolare</h3>
+                    <p class="card-description">Riduzione naturale delle rughe di espressione con risultati graduali e naturali.</p>
+                    <ul class="card-features">
+                        <li>✓ Rughe fronte e contorno occhi</li>
+                        <li>✓ Effetto dopo 3-7 giorni</li>
+                        <li>✓ Durata 3-4 mesi</li>
+                        <li>✓ Aspetto naturale garantito</li>
+                    </ul>
+                </div>
+
+                <!-- Bio-Rivitalizzazione -->
+                <div class="servizio-card fade-in" data-animation="fadeInUp">
+                    <div class="card-icon">🌿</div>
+                    <h3>Bio-Rivitalizzazione</h3>
+                    <p class="card-description">Stimolazione naturale del collagene per pelle più luminosa, tonica e giovane.</p>
+                    <ul class="card-features">
+                        <li>✓ Collagene e aminoacidi</li>
+                        <li>✓ Pelle più idratata</li>
+                        <li>✓ Effetto anti-aging naturale</li>
+                        <li>✓ Ciclo 3-4 sedute</li>
+                    </ul>
+                </div>
+
+                <!-- Microneedling -->
+                <div class="servizio-card fade-in" data-animation="fadeInUp">
+                    <div class="card-icon">🔬</div>
+                    <h3>Microneedling</h3>
+                    <p class="card-description">Stimolazione del collagene naturale per cicatrici, pori dilatati e texture della pelle.</p>
+                    <ul class="card-features">
+                        <li>✓ Riduce cicatrici e rughe</li>
+                        <li>✓ Pori più piccoli</li>
+                        <li>✓ Texture più liscia</li>
+                        <li>✓ Risultati visibili dopo 4-6 settimane</li>
+                    </ul>
+                </div>
+
+                <!-- Consulenza -->
+                <div class="servizio-card fade-in" data-animation="fadeInUp">
+                    <div class="card-icon">💬</div>
+                    <h3>Consulenza Personalizzata</h3>
+                    <p class="card-description">Valutazione completa del tuo viso per creare il piano di trattamento ideale.</p>
+                    <ul class="card-features">
+                        <li>✓ Analisi approfondita</li>
+                        <li>✓ Consigli personalizzati</li>
+                        <li>✓ Piano trattamenti</li>
+                        <li>✓ Prima consulenza gratuita</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chi Sono Section -->
+    <section id="chi-sono" class="chi-sono">
+        <div class="container">
+            <h2 class="section-title">Chi Sono</h2>
+            
+            <div class="chi-sono-content">
+                <div class="chi-sono-text fade-in">
+                    <h3>Dr.ssa Medica</h3>
+                    <p class="bio-subtitle">Medico di Base e Chirurga Estetica</p>
+                    
+                    <p class="bio-description">
+                        Con più di 15 anni di esperienza nel settore della medicina estetica e chirurgia plastica, 
+                        mi dedico a far sentire i miei pazienti belli e sicuri di sé. La mia filosofia si basa sulla 
+                        <strong>naturalezza</strong> e l'<strong>armonia</strong> dei lineamenti.
+                    </p>
+
+                    <div class="bio-specialities">
+                        <h4>Specializzazioni:</h4>
+                        <ul>
+                            <li>✓ Medicina Estetica Avanzata</li>
+                            <li>✓ Chirurgia Plastica Ricostruttiva</li>
+                            <li>✓ Trattamenti Anti-Aging</li>
+                            <li>✓ Dermatologia Estetica</li>
+                            <li>✓ Medicina Preventiva</li>
+                        </ul>
+                    </div>
+
+                    <div class="bio-certifications">
+                        <h4>Certificazioni e Formazione:</h4>
+                        <ul>
+                            <li>✓ Laureata in Medicina e Chirurgia</li>
+                            <li>✓ Specializzazione in Dermatologia</li>
+                            <li>✓ Master in Medicina Estetica</li>
+                            <li>✓ Corsi di Aggiornamento Continuo</li>
+                            <li>✓ Membro Associazioni Professionali Internazionali</li>
+                        </ul>
+                    </div>
+
+                    <p class="bio-closing">
+                        <em>"La bellezza non è nascondere i difetti, ma valorizzare la tua essenza naturale."</em>
+                    </p>
+                </div>
+
+                <div class="chi-sono-image fade-in delay-1">
+                    <img src="https://via.placeholder.com/400x500/d63447/ffffff?text=Dr.ssa+Medica" alt="Dr.ssa Medica">
+                    <div class="image-frame"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contatti Section -->
+    <section id="contatti" class="contatti">
+        <div class="container">
+            <h2 class="section-title">Contattami</h2>
+            <p class="section-subtitle">Prenota la tua consulenza gratuita oggi stesso</p>
+
+            <div class="contatti-content">
+                <!-- Info Cards -->
+                <div class="info-cards">
+                    <div class="info-card fade-in">
+                        <div class="info-icon">📍</div>
+                        <h4>Indirizzo</h4>
+                        <p>Via Roma, 123<br>00100 Roma, RM</p>
+                    </div>
+
+                    <div class="info-card fade-in delay-1">
+                        <div class="info-icon">📞</div>
+                        <h4>Telefono</h4>
+                        <p>+39 06 1234567<br><a href="tel:+39061234567">Chiama ora</a></p>
+                    </div>
+
+                    <div class="info-card fade-in delay-2">
+                        <div class="info-icon">✉️</div>
+                        <h4>Email</h4>
+                        <p>info@drmedica.it<br><a href="mailto:info@drmedica.it">Invia email</a></p>
+                    </div>
+
+                    <div class="info-card fade-in delay-3">
+                        <div class="info-icon">🕐</div>
+                        <h4>Orari</h4>
+                        <p>Lun-Ven: 9:00-19:00<br>Sab: 10:00-17:00</p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <form class="contact-form fade-in delay-1" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nome Completo *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Telefono</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="servizio">Servizio Interessato</label>
+                        <select id="servizio" name="servizio">
+                            <option value="">Seleziona un servizio</option>
+                            <option value="filler">Filler Dermici</option>
+                            <option value="rinofiller">Rinofiller</option>
+                            <option value="botox">Botox</option>
+                            <option value="bio-riv">Bio-Rivitalizzazione</option>
+                            <option value="microneedling">Microneedling</option>
+                            <option value="consulenza">Consulenza</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Messaggio *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">Accetto l'<a href="#privacy-policy">informativa sulla privacy</a> *</label>
+                    </div>
+
+                    <button type="submit" class="submit-button">Invia Messaggio</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Success Popup -->
+        <div class="success-popup" id="successPopup">
+            <div class="popup-content">
+                <div class="popup-icon">✓</div>
+                <h3>Messaggio Inviato!</h3>
+                <p>Grazie per aver contattato Dr.ssa Medica. Ti contatteremo presto.</p>
+                <button onclick="closePopup()">Chiudi</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Dr.ssa Medica</h4>
+                    <p>Medicina Estetica e Chirurgia Plastica</p>
+                    <p>Bellezza consapevole e naturale</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#servizi">Servizi</a></li>
+                        <li><a href="#chi-sono">Chi Sono</a></li>
+                        <li><a href="#contatti">Contatti</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Social Media</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" title="Instagram">📷 Instagram</a>
+                        <a href="https://facebook.com" target="_blank" title="Facebook">👍 Facebook</a>
+                        <a href="https://linkedin.com" target="_blank" title="LinkedIn">💼 LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dr.ssa Medica. Tutti i diritti riservati.</p>
+                <p>
+                    <a href="#privacy-policy">Privacy Policy</a> | 
+                    <a href="#terms">Termini di Servizio</a> | 
+                    <a href="#cookies">Cookie Policy</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
